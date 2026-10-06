@@ -103,4 +103,503 @@
       font-weight: 700;
       color: #555;
       cursor: pointer;
-      border-bottom:
+      border-bottom: 2px solid transparent;
+    }
+
+    .cp-tab-item.active {
+      color: var(--cp-red);
+      border-bottom: 2px solid var(--cp-red);
+    }
+
+    /* =========================================
+       2. HERO PROMOTION BANNER (A/B TESTING)
+       ========================================= */
+    .hero-ab-container {
+      background: #FFFFFF;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #E5E5E5;
+    }
+
+    .section-title-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 14px 6px;
+    }
+
+    .section-main-title {
+      font-size: 17px;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .section-sub-title {
+      font-size: 12px;
+      color: var(--cp-gray);
+    }
+
+    /* Main Showcase Card (The Clickable A/B Card) */
+    .hero-product-card {
+      padding: 10px 14px 16px;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .hero-product-card:active {
+      background: #F9F9F9;
+    }
+
+    .hero-img-box {
+      width: 100%;
+      height: 250px;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+      background: #FAFAFA;
+      border: 1px solid #EAEAEA;
+    }
+
+    .hero-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Free Gift Tag */
+    .gift-badge {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.75);
+      color: #FFF;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    .hero-badge-tag {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 800;
+      color: #FFF;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .hero-badge-tag.type-a {
+      background: #2E7D32;
+    }
+
+    .hero-badge-tag.type-b {
+      background: #D32F2F;
+    }
+
+    .hero-info-box {
+      margin-top: 12px;
+    }
+
+    .hero-item-title {
+      font-size: 15px;
+      font-weight: 800;
+      line-height: 1.4;
+      color: var(--cp-dark);
+      margin-bottom: 6px;
+    }
+
+    .hero-item-desc {
+      font-size: 13px;
+      color: #555;
+      line-height: 1.45;
+      margin-bottom: 8px;
+    }
+
+    .hero-price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .hero-discount-rate {
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--cp-red);
+    }
+
+    .hero-origin-price {
+      font-size: 13px;
+      color: #999;
+      text-decoration: line-through;
+    }
+
+    .hero-final-price {
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--cp-dark);
+    }
+
+    .hero-rocket-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--cp-blue);
+      margin-top: 4px;
+    }
+
+    .hero-ab-highlight {
+      margin-top: 8px;
+      padding: 8px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .hero-ab-highlight.type-a {
+      background: #E8F5E9;
+      color: #1B5E20;
+    }
+
+    .hero-ab-highlight.type-b {
+      background: #FFEBEE;
+      color: #B71C1C;
+    }
+
+    /* Sub Products Grid under Hero */
+    .sub-grid-section {
+      background: #FFFFFF;
+      padding: 14px;
+      margin-bottom: 70px;
+    }
+
+    .sub-grid-title {
+      font-size: 15px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .sub-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .sub-card {
+      border: 1px solid #EAEAEA;
+      border-radius: 6px;
+      padding: 8px;
+      opacity: 0.85;
+    }
+
+    .sub-card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .sub-card-name {
+      font-size: 12px;
+      font-weight: 600;
+      margin: 6px 0 2px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .sub-card-price {
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    /* =========================================
+       3. PRODUCT DETAIL VIEW (TARGET PAGE)
+       ========================================= */
+    #detail-page-view {
+      display: none;
+      min-height: 100vh;
+      background: #FFFFFF;
+      padding-bottom: 80px;
+    }
+
+    .detail-nav-bar {
+      position: sticky;
+      top: 0;
+      background: #FFF;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 14px;
+      border-bottom: 1px solid #EEE;
+      z-index: 100;
+    }
+
+    .detail-top-image {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      background: #FAFAFA;
+      display: block;
+    }
+
+    .detail-body {
+      padding: 16px;
+    }
+
+    .detail-brand-name {
+      color: var(--cp-blue);
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+
+    .detail-product-title {
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }
+
+    .detail-pricing-box {
+      border-top: 1px solid #F0F0F0;
+      border-bottom: 1px solid #F0F0F0;
+      padding: 12px 0;
+      margin-bottom: 16px;
+    }
+
+    .detail-bottom-actions {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #FFFFFF;
+      border-top: 1px solid #EAEAEA;
+      padding: 10px 14px;
+      display: flex;
+      gap: 8px;
+      z-index: 100;
+    }
+
+    .btn-cp-cart {
+      flex: 1;
+      height: 48px;
+      border: 1px solid #CCC;
+      background: #FFF;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 4px;
+    }
+
+    .btn-cp-buy {
+      flex: 2;
+      height: 48px;
+      border: none;
+      background: var(--cp-blue);
+      color: #FFF;
+      font-size: 15px;
+      font-weight: 800;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =========================================================
+       VIEW 1: COUPANG MAIN HOMEPAGE (A/B TESTING)
+       ========================================================= -->
+  <div id="home-page-view">
+    <!-- Header -->
+    <header class="coupang-top-header">
+      <div class="top-search-row">
+        <a href="#" class="cp-logo-text">coupang</a>
+        <div class="cp-search-bar">
+          <input type="text" value="신발mlb" readonly>
+          <span class="cp-search-icon">🔍</span>
+        </div>
+        <span class="cp-cart-icon">🛒</span>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <div class="cp-nav-tabs">
+        <div class="cp-tab-item active">골드박스</div>
+        <div class="cp-tab-item">로켓배송</div>
+        <div class="cp-tab-item">로켓프레시</div>
+        <div class="cp-tab-item">쿠팡플레이</div>
+        <div class="cp-tab-item">기획전</div>
+      </div>
+    </header>
+
+    <!-- Hero Showcase Section (Main A/B Test Element) -->
+    <section class="hero-ab-container">
+      <div class="section-title-bar">
+        <div class="section-main-title">
+          <span>🔥</span> 골드박스 타임특가
+        </div>
+        <div class="section-sub-title">오늘만 이 가격!</div>
+      </div>
+
+      <!-- Main Clickable Product Card -->
+      <div class="hero-product-card" id="ab-hero-card">
+        <div class="hero-img-box">
+          <span class="hero-badge-tag" id="hero-badge">특가</span>
+          <img src="https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/ff5df797-9e4a-579a-a221-389530faa4a5/3e8cf789-6124-5215-bbd5-ca04762847e5.jpg" alt="MLB BIG A 키높이 운동화">
+          <span class="gift-badge">🎁 슈즈렉 1:1 증정</span>
+        </div>
+
+        <div class="hero-info-box">
+          <!-- A/B Dynamic Title -->
+          <h2 class="hero-item-title" id="hero-title">MLB 빅볼청키 BIG A 로딩중...</h2>
+          
+          <!-- A/B Dynamic Description -->
+          <div class="hero-item-desc" id="hero-desc">로딩중...</div>
+
+          <div class="hero-price-row">
+            <span class="hero-discount-rate">34%</span>
+            <span class="hero-origin-price">149,000원</span>
+            <span class="hero-final-price">98,000원</span>
+          </div>
+
+          <div class="hero-rocket-label">
+            🚀 로켓배송 | 내일(수) 새벽 7시 전 도착 보장
+          </div>
+
+          <!-- A/B Dynamic Message -->
+          <div class="hero-ab-highlight" id="hero-message"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sub Grid Section -->
+    <section class="sub-grid-section">
+      <div class="sub-grid-title">함께 둘러보는 인기 운동화</div>
+      <div class="sub-grid">
+        <div class="sub-card">
+          <img src="https://st.perplexity.ai/estatic/0b226c450798410ac541646c86ec31afd840e5beab817a5d84fa821e7db61981ec84c3b4a3f072a7a2e1899c9fb06c6e319eb3eebce124ba3f2265ee3994338086e901af16a7413d3b8ad90b1c2b84d4e718cc7c394e4e21dc31bd5ded4852a9fee6e67a9731aeee26124de6c769972f" alt="청키라이너">
+          <div class="sub-card-name">MLB 청키라이너 베이직</div>
+          <div class="sub-card-price">126,650원</div>
+        </div>
+        <div class="sub-card">
+          <img src="https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/81b8b79e-f108-5a40-920f-2118f8d3f881/7c2ab6a3-7df5-5d81-bdbe-b6f310227183.jpg" alt="MLB 커브러너">
+          <div class="sub-card-name">MLB 커브러너 스피드</div>
+          <div class="sub-card-price">159,000원</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- =========================================================
+       VIEW 2: PRODUCT DETAIL PAGE (LANDING TARGET)
+       ========================================================= -->
+  <div id="detail-page-view">
+    <div class="detail-nav-bar">
+      <button onclick="backToHome()" style="background:none; border:none; font-size:20px; cursor:pointer; font-weight:bold;">←</button>
+      <span style="font-weight: 800; font-size: 15px;">상품상세</span>
+      <span style="font-size: 18px;">🛒</span>
+    </div>
+
+    <img class="detail-top-image" src="https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/ff5df797-9e4a-579a-a221-389530faa4a5/3e8cf789-6124-5215-bbd5-ca04762847e5.jpg" alt="MLB BIG A 키높이 운동화">
+
+    <div class="detail-body">
+      <div class="detail-brand-name">MLB KOREA OFFICIAL</div>
+      <h1 class="detail-product-title" id="detail-title-target">MLB 운동화 남녀공용 BIG A 키높이 신발 + 벨뉴슈즈렉 증정</h1>
+
+      <div class="detail-pricing-box">
+        <div style="font-size: 13px; color: #888; text-decoration: line-through;">정상가 149,000원</div>
+        <div style="display:flex; align-items:baseline; gap:8px;">
+          <span style="color:var(--cp-red); font-size:26px; font-weight:900;">34%</span>
+          <span style="font-size:26px; font-weight:900; color:#111;">98,000원</span>
+        </div>
+        <div style="color:var(--cp-blue); font-size:13px; font-weight:800; margin-top:4px;">
+          🚀 로켓배송 | 내일(수) 새벽 7시 전 도착 보장
+        </div>
+      </div>
+
+      <div style="font-size: 13px; color: #444; line-height: 1.6;">
+        • <b>기본 구성</b>: MLB BIG A 정품 키높이 운동화 (6cm 솔)<br>
+        • <b>단독 사은품</b>: 프리미엄 벨뉴슈즈렉 (신발 정리대) 100% 동봉 출고<br>
+        • <b>배송 혜택</b>: 로켓배송 / 30일 이내 무료 반품 보장
+      </div>
+    </div>
+
+    <div class="detail-bottom-actions">
+      <button class="btn-cp-cart">장바구니</button>
+      <button class="btn-cp-buy" onclick="alert('주문이 완료되었습니다. (Conversion 측정 완료)')">
+        바로구매 (로켓배송)
+      </button>
+    </div>
+  </div>
+
+
+  <!-- =========================================================
+       A/B TEST JAVASCRIPT LOGIC
+       ========================================================= -->
+  <script>
+    // 1. Phân bổ ngẫu nhiên 50/50 giữa Group A và Group B
+    const abGroup = Math.random() < 0.5 ? 'A' : 'B';
+
+    // 2. Định nghĩa thông điệp A/B cho MLB BIG A + 벨뉴슈즈렉
+    const abVariants = {
+      A: {
+        badgeText: "쿠팡단독 사은품 혜택",
+        badgeType: "type-a",
+        title: "MLB 운동화 남녀공용 BIG A 키높이 신발 + 벨뉴슈즈렉 증정",
+        desc: "자연스러운 6cm 키높이 핏 완성 & 프리미엄 신발 정리대 1:1 무료 증정 혜택을 누려보세요.",
+        message: "✨ 와우회원 34% 즉시할인 + 무료배송 & 무료반품 보장"
+      },
+      B: {
+        badgeText: "마감임박 한정특가",
+        badgeType: "type-b",
+        title: "[품절임박] MLB 운동화 BIG A 키높이 신발 (슈즈렉 증정 오늘마감)",
+        desc: "오늘 24:00 이후 사은품 증정이 종료되며, 인기 사이즈(230~250)는 잔여 3켤레 남았습니다.",
+        message: "⚠️ 망설이면 사은품 혜택 마감 / 내일부터 정상가 149,000원으로 환원됩니다."
+      }
+    };
+
+    // 3. Render thông điệp vào khung Hero Banner
+    const activeVariant = abVariants[abGroup];
+    const heroBadge = document.getElementById('hero-badge');
+    const heroTitle = document.getElementById('hero-title');
+    const heroDesc = document.getElementById('hero-desc');
+    const heroMessage = document.getElementById('hero-message');
+
+    heroBadge.textContent = activeVariant.badgeText;
+    heroBadge.className = 'hero-badge-tag ' + activeVariant.badgeType;
+    heroTitle.textContent = activeVariant.title;
+    heroDesc.textContent = activeVariant.desc;
+    heroMessage.textContent = activeVariant.message;
+    heroMessage.className = 'hero-ab-highlight ' + activeVariant.badgeType;
+
+    console.log(`[A/B Test Init] Current Variant: Group ${abGroup}`);
+
+    // 4. Bắt sự kiện Click để chuyển màn hình và đo Conversion
+    const heroCard = document.getElementById('ab-hero-card');
+    const homeView = document.getElementById('home-page-view');
+    const detailView = document.getElementById('detail-page-view');
+    const detailTitleTarget = document.getElementById('detail-title-target');
+
+    heroCard.addEventListener('click', function() {
+      console.log(`[A/B Click Conversion] Variant ${abGroup} clicked!`);
+      
+      detailTitleTarget.textContent = activeVariant.title;
+      homeView.style.display = 'none';
+      detailView.style.display = 'block';
+      window.scrollTo(0, 0);
+    });
+
+    function backToHome() {
+      detailView.style.display = 'none';
+      homeView.style.display = 'block';
+      window.scrollTo(0, 0);
+    }
+  </script>
+</body>
+</html>
